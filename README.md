@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# CHAT APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+### Simple interactive chat application where users can create an account, style and edit their profile with different avatars. User can access chat room to send real-live messages to other users and have a conversation.
 
-In the project directory, you can run:
+## User Stories
 
-### `npm start`
+*  As new user, I would like to sign up with email and password
+*  As a registered user, I would like to sing in with email and password
+*  As a signed in user, I would like to sign out
+*  As a signed in user, I would like to edit my profile 
+*  As a signed in user, I would like to enter chatroom 
+*  As a signed in user, I would like to send a message to other users 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech I Plan to Use
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+*  REACT
+*  Node.js
+*  MongoDB
+*  Socket.io
+*  HTML/CSS
 
-### `npm test`
+## RESTful Routing Chart
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![](https://user-images.githubusercontent.com/102763920/178703562-43635562-581c-4815-8b23-5763f3347376.png)
 
-### `npm run build`
+## Wire Frames
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Home Page Path: '/'
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![](https://user-images.githubusercontent.com/102763920/178703691-5b2a000c-2855-4b0b-ab02-cf6e9f442c58.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Account Page Path: '/profile'
 
-### `npm run eject`
+![](https://user-images.githubusercontent.com/102763920/178703379-7c818cce-6f41-490d-8ddc-e34e0e13bd8a.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Chat Room Page Path: '/chatroom' 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](https://user-images.githubusercontent.com/102763920/178703106-a1db09d2-504b-4158-98d5-be63d618acbd.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ERD/Models
 
-## Learn More
+![](https://user-images.githubusercontent.com/102763920/178704405-84187e2d-b138-4979-95ba-6f04eff2d86c.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Daily Planning 
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*  DAY 1: Plan on working on back-end set up and CRUD structuring.  Study socket.io documentation.
+*  DAY 2: Continue working on back-end setup and CRUD functionality. Study socket.io documentation.
+*  DAY 3: Plan on working on front-end setup and functionality with back-end
+*  Day 4: Continue working on app functionality before working on styling. Work on any bugs or errors that arise.
+*  Day 5: Start working on styling and user experience visuals. Continue working on functionality and ensure back and front-end are in synch 
+*  Day 6 (if applicable): Test and work on deployment of application.  
