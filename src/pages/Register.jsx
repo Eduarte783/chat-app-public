@@ -110,6 +110,15 @@ const FormContainer = styled.div`
             border: 0.2rem solid #1e0079;
          }
       }
+      span {
+         color: #1e0079;
+         text-transform: uppercase;
+         a {
+            color: #7851f0;
+            text-decoration: none;
+            font-weight: bold;
+         }
+      }
    }
 `;
 
