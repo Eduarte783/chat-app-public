@@ -1,4 +1,4 @@
-# CHAT APP
+# CHAT APP - Server
 
 ## Description
 
