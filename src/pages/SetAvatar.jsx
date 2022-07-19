@@ -21,21 +21,33 @@ export default function SetAvatar() {
     draggable: true,
     theme: "dark",
  };
- 
- const setProfilePicture = async () => {};
- 
-/* useEffect(async () => {
-  const data = [];
-  for (let i = 0; i < 4; i++) {
-    const image = await axios.get(
-      `${api}/${Math.round(Math.random() * 1000)}`
-    );
-      const buffer = new Buffer(image.data);
-      data.push(buffer.toString("base64"));
+
+  useEffect(() => {
+    async function fetchData() {
+    if (!localStorage.getItem('chat-app-user'))
+      navigate('/login');
     }
-    setAvatars(data);
-    setIsLoading(false);
- }, []);*/
+    fetchData();
+  }, []);
+
+ const setProfilePicture = async () => {
+  if(selectedAvatar === undefined) {
+    toast.error("Please select an avatar", toastOptions);
+  } else {
+    const user = await JSON.parse(localStorage.getItem("chat-app-user"));
+    const { data } = await axios.post(`${setAvatarRoute}/${user._id}`, {
+      image: avatars[selectedAvatar],
+    })
+    if(data.isSet) {
+      user.isAvatarImageSet = true;
+      user.avatarImage = data.image;
+      localStorage.setItem("chat-app-user", JSON.stringify(user));
+      navigate("/");
+    } else {
+        toast.error("Error setting avatar. Please try again", toastOptions);
+    }
+  }
+ };
 
  useEffect(() => {
   async function fetchData() {
@@ -77,7 +89,7 @@ export default function SetAvatar() {
               );
           })}
         </div>
-        <button className="submit-btn" oncClick={setProfilePicture}>Set as Profile Picture
+        <button className="submit-btn" onClick={setProfilePicture}>Set as Profile Picture
         </button>  
       </Container>;
       <ToastContainer />
@@ -123,17 +135,19 @@ const Container = styled.div`
     }
   }
   .submit-btn {
-    background-color: #4e0eff;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 0.4rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-    &:hover {
-      background-color: #4e0eff;
+      background-color: white;
+      color: #1e0079;
+      padding: 1rem 2rem;
+      border: 0.2rem solid #997af0;
+      cursor: pointer;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      transition: 0.3s ease-in-out;
+      &:hover {
+         background-color: #997af0;
+         border: 0.2rem solid #1e0079;
+      }
     }
   }
 `;
