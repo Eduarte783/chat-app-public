@@ -64,9 +64,6 @@
 
 ## ERD/Models
 
-<<<<<<< HEAD
-![](https://i.imgur.com/jb5a1K5.png)
-=======
 ![](https://user-images.githubusercontent.com/102763920/179932200-9e385da4-13db-4960-ae65-721c67b8b07e.png)
 /jb5a1K5/)
 
@@ -81,7 +78,7 @@ For my capstone project I decided to create a MERN app using some of the various
 Some of the toughest hurdles I had to work through was when trying to fetch the users data (messages) and cohesively show it for the other user in the app. I found that using "useState" and "useEffect" hooks along with "try/catch" made things easier, with a little bit of trial and error. Next was learning to use the socket.io package to sync with the application, reviewing the documentation and implementing different methods. Currently the app has a few kinks that need to be worked out. As a post-project goal I would like to add additional functionally for multiple users in a single chat and improved responsiveness for phones and smaller screen devices. 
 
 
->>>>>>> afbf32f071030c62ab04c8e89203f449a20bbc7e
+
 
 
 
