@@ -42,7 +42,7 @@
 
 ## ERD/Models
 
-![](https://imgur.com/download/jb5a1K5/)
+![](https://i.imgur.com/jb5a1K5.png)
 
 
 ## Daily Planning 
