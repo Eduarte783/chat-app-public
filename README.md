@@ -27,17 +27,23 @@
 
 ## Wire Frames
 
-### Home Page Path: '/'
+### Registraion Page Path: '/register'
 
-![](https://user-images.githubusercontent.com/102763920/178703691-5b2a000c-2855-4b0b-ab02-cf6e9f442c58.png)
+![](https://user-images.githubusercontent.com/102763920/179935846-495c78de-6665-4cc9-a866-1dd23419dc7a.png)
 
-### Account Page Path: '/profile'
+### Login Page Path: '/login'
 
-![](https://user-images.githubusercontent.com/102763920/178703379-7c818cce-6f41-490d-8ddc-e34e0e13bd8a.png)
+![](https://user-images.githubusercontent.com/102763920/179936091-6c151b1b-97df-4a48-9ba2-8a54efd19272.png)
 
-### Chat Room Page Path: '/chatroom' 
+### Profile/Avatar Page Path: '/setAvatar'
 
-![](https://user-images.githubusercontent.com/102763920/178703106-a1db09d2-504b-4158-98d5-be63d618acbd.png)
+![](https://user-images.githubusercontent.com/102763920/179936486-04a0b618-c491-46b9-a252-d951b9778349.png)
+
+### Chat Room Page Path: '/' 
+
+![](https://user-images.githubusercontent.com/102763920/179939182-9c17eb8f-25b7-4e09-b1f9-f7c40ee1135d.png)
+
+![](https://user-images.githubusercontent.com/102763920/179939352-35d896b5-bb75-4394-8ce9-1c657d6e158a.png)
 
 
 ## ERD/Models
