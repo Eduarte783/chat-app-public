@@ -23,7 +23,7 @@
 
 ## RESTful Routing Chart
 
-![](https://user-images.githubusercontent.com/102763920/178703562-43635562-581c-4815-8b23-5763f3347376.png)
+![]((https://user-images.githubusercontent.com/102763920/179932614-db54fbbf-4308-4efa-b61c-fd1ddbc456c9.png)
 
 ## Wire Frames
 
