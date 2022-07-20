@@ -8,7 +8,7 @@ import { loginRoute } from "../utils/APIRoutes";
 
 function Login() {
    const navigate = useNavigate();
-   const [values, setValues] = useState({
+   const [values, setValues] = useState({ 
       username: "",
       password: "",      
    });
@@ -32,7 +32,7 @@ function Login() {
 
    const validateForm = () => {
     const { username, password } = values;
-    if (username.length === "") {
+    if (username === "") {
       toast.error("Email and password is required", toastOptions);
       return false;
     } else if (password === "") {

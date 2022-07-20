@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import axios from "axios";
+import { Buffer } from "buffer";
 /*import loader from "../assets/loader.gif"; */
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import { setAvatarRoute } from "../utils/APIRoutes";
-import { Buffer } from "buffer";
 
 export default function SetAvatar() {
   const api = "https://api.multiavatar.com/45678645";
@@ -28,7 +28,7 @@ export default function SetAvatar() {
       navigate('/login');
     }
     fetchData();
-  }, []);
+  },);
 
  const setProfilePicture = async () => {
   if(selectedAvatar === undefined) {
@@ -75,7 +75,7 @@ export default function SetAvatar() {
           {avatars.map((avatar, index) => {
             return (
               <div
-                key={index} 
+                //key={index} 
                 className={`avatar ${
                   selectedAvatar === index ? "selected" : ""
                 }`}
@@ -83,16 +83,17 @@ export default function SetAvatar() {
                   <img 
                   src={`data:image/svg+xml;base64,${avatar}`} 
                   alt="avatar"
+                  key={avatar}
                   onClick={() => setSelectedAvatar(index)}
                   />                  
                 </div>
               );
           })}
         </div>
-        <button className="submit-btn" onClick={setProfilePicture}>Set as Profile Picture
+        <button onClick={setProfilePicture} className="submit-btn">Set as       Profile Picture
         </button>  
-      </Container>;
-      <ToastContainer />
+        <ToastContainer />
+      </Container>
     </>
   );
 }
@@ -135,20 +136,17 @@ const Container = styled.div`
     }
   }
   .submit-btn {
-      background-color: white;
-      color: #1e0079;
-      padding: 1rem 2rem;
-      border: 0.2rem solid #997af0;
-      cursor: pointer;
-      border-radius: 0.5rem;
-      font-size: 1rem;
-      text-transform: uppercase;
-      transition: 0.3s ease-in-out;
-      &:hover {
-         background-color: #997af0;
-         border: 0.2rem solid #1e0079;
-      }
+    background-color: #4e0eff;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    &:hover {
+      background-color: #4e0eff;
     }
   }
 `;
-

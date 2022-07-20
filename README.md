@@ -13,7 +13,7 @@
 *  As a signed in user, I would like to enter chatroom 
 *  As a signed in user, I would like to send a message to other users 
 
-## Tech I Plan to Use
+## Technologies used for Project
 
 *  REACT
 *  Node.js
@@ -42,7 +42,7 @@
 
 ## ERD/Models
 
-![](https://user-images.githubusercontent.com/102763920/178704405-84187e2d-b138-4979-95ba-6f04eff2d86c.png)
+![](https://imgur.com/download/jb5a1K5/)
 
 
 ## Daily Planning 
